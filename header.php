@@ -29,5 +29,14 @@ get_template_part('partials/seo');
 <section id="main-container">
 
   <header id="header">
-    <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
+    <h1 class="u-visuallyhidden">Onda MX Kickstarter</h1>
+    <div class="grid-row">
+      <div class="grid-item">
+        <a href="<?php echo home_url(); ?>">ONDA LOGO</a>
+      </div>
+      <div class="grid-item flex-grow" id="marquee">There are only 7 DAYS and 2 HOURS left to own this work and support Onda!</div>
+      <div class="grid-item">
+        <a href="https://kickstarter.com/">KICKSTARTER</a>
+      </div>
+    </div>
   </header>
