@@ -38,5 +38,9 @@
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1",
     "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "imagesloaded": "^4.1.4",
+    "masonry-layout": "^4.2.2"
   }
 }
