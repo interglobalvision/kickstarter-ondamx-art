@@ -31,6 +31,13 @@ function igv_register_theme_options_metabox() {
   ) );
 
   $custom_options->add_field( array(
+    'name'    => esc_html__( 'Kickstarter URL', 'cmb2' ),
+    'desc'    => esc_html__( '', 'cmb2' ),
+    'id'      => 'kickstarter_url',
+    'type'    => 'text_url',
+  ) );
+
+  $custom_options->add_field( array(
     'name'    => esc_html__( 'Intro text', 'cmb2' ),
     'desc'    => esc_html__( '', 'cmb2' ),
     'id'      => 'intro_text',

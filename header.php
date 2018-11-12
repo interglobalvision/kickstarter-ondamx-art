@@ -46,7 +46,7 @@ if (!empty($options['marquee_text'])) {
 }
 ?>
       <div class="grid-item item-s-8 item-m-3 item-l-2 text-align-right">
-        <a href="https://kickstarter.com/"><img id="kickstarter-logo" src="<?php bloginfo('stylesheet_directory'); ?>/dist/img/logo_kickstarter.png" /></a>
+        <a href="<?php echo !empty($options['kickstarter_url']) ? $options['kickstarter_url'] " 'https://kickstarter.com/profile/ondamx'; ?>"><img id="kickstarter-logo" src="<?php bloginfo('stylesheet_directory'); ?>/dist/img/logo_kickstarter.png" /></a>
       </div>
     </div>
   </header>
