@@ -52,6 +52,12 @@ function igv_cmb_metaboxes() {
 	) );
 
   $metabox->add_field( array(
+		'name'       => esc_html__( 'Artist bio', 'cmb2' ),
+		'id'         => $prefix . 'work_bio',
+		'type'       => 'textarea',
+	) );
+
+  $metabox->add_field( array(
 		'name'       => esc_html__( 'Title', 'cmb2' ),
 		'id'         => $prefix . 'work_title',
 		'type'       => 'text',
