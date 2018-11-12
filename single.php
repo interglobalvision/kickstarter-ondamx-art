@@ -30,8 +30,15 @@ if (have_posts()) {
             <span><?php echo !empty($price_mxn) ? '$' . $price_mxn . ' MXN' : ''; ?></span> /
             <span><?php echo !empty($price_usd) ? '$' . $price_usd . ' USD' : ''; ?></span>
           </div>
-          <h2 class="u-inline-block font-italic"><?php echo !empty($title) ? $title : ''; ?></h2>, <span><?php echo !empty($year) ? $year : ''; ?></span>
-          <div class="margin-top-basic"><a href="https://kickstarter.com/" id="support" class="font-barlow font-size-mid">SUPPORT HERE</a></div>
+          <div>
+            <h2 class="u-inline-block font-italic"><?php echo !empty($title) ? $title : ''; ?></h2>, <span><?php echo !empty($year) ? $year : ''; ?></span>
+          </div>
+          <div>
+            <?php the_content(); ?>
+          </div>
+          <div class="margin-top-basic">
+            <a href="https://kickstarter.com/" id="support" class="font-barlow font-size-mid">SUPPORT HERE</a>
+          </div>
         </div>
 
       </article>
