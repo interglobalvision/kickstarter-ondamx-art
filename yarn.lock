@@ -3005,6 +3005,10 @@ jpegtran-bin@^3.0.0:
     bin-wrapper "^3.0.0"
     logalot "^2.0.0"
 
+jquery.marquee@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/jquery.marquee/-/jquery.marquee-1.5.0.tgz#2d65e2abb2b9240054113bc4d676ccb98eea5ea2"
+
 js-base64@^2.1.9:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.3.2.tgz#a79a923666372b580f8e27f51845c6f7e8fbfbaf"
