@@ -28,7 +28,7 @@ get_template_part('partials/seo');
 
 <section id="main-container">
 
-  <header id="header" class="padding-top-small padding-bottom-small">
+  <header id="header" class="padding-top-tiny padding-bottom-tiny">
     <h1 class="u-visuallyhidden">Onda MX Kickstarter</h1>
     <div id="header-row" class="grid-row justify-between align-items-center">
       <div class="grid-item item-s-4 item-m-3 item-l-2">
