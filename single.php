@@ -37,7 +37,7 @@ if (have_posts()) {
             <?php the_content(); ?>
           </div>
           <div class="margin-top-basic">
-            <a href="<?php echo !empty($options['kickstarter_url']) ? $options['kickstarter_url'] " : 'https://kickstarter.com/profile/ondamx'; ?>" id="support" class="font-barlow font-size-mid">SUPPORT HERE</a>
+            <a href="<?php echo !empty($options['kickstarter_url']) ? $options['kickstarter_url'] : 'https://kickstarter.com/profile/ondamx'; ?>" id="support" class="font-barlow font-size-mid">SUPPORT HERE</a>
           </div>
         </div>
 
