@@ -17,6 +17,8 @@ if (have_posts()) {
     $price_mxn = get_post_meta($post->ID, '_igv_work_price_mxn', true);
     $price_usd = get_post_meta($post->ID, '_igv_work_price_usd', true);
     $year = get_post_meta($post->ID, '_igv_work_year', true);
+
+    $options = get_site_option('_igv_custom_options');
 ?>
 
       <article <?php post_class('grid-row margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
