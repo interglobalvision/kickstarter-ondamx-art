@@ -21,7 +21,7 @@ if (have_posts()) {
 
       <article <?php post_class('grid-row margin-bottom-basic'); ?> id="post-<?php the_ID(); ?>">
         <div class="grid-item item-s-12 item-m-6 item-l-7">
-          <?php the_post_thumbnail('full'); ?>
+          <?php the_post_thumbnail('reward-single'); ?>
         </div>
 
         <div id="single-details" class="grid-item item-s-12 item-m-6 item-l-5 font-size-mid">
