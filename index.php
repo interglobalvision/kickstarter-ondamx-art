@@ -5,8 +5,6 @@ get_header();
 <main id="main-content" class="padding-bottom-large margin-top-basic">
   <div class="container">
 <?php
-get_template_part('partials/intro');
-
 if (have_posts()) {
 ?>
     <section id="rewards" class="margin-top-mid">
