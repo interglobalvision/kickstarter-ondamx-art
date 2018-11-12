@@ -28,15 +28,25 @@ get_template_part('partials/seo');
 
 <section id="main-container">
 
-  <header id="header">
+  <header id="header" class="padding-top-small padding-bottom-small">
     <h1 class="u-visuallyhidden">Onda MX Kickstarter</h1>
-    <div class="grid-row">
-      <div class="grid-item">
-        <a href="<?php echo home_url(); ?>">ONDA LOGO</a>
+    <div id="header-row" class="grid-row justify-between align-items-center">
+      <div class="grid-item item-s-4 item-m-3 item-l-2">
+        <a href="<?php echo home_url(); ?>"><img id="onda-logo" src="<?php bloginfo('stylesheet_directory'); ?>/dist/img/logo_ondamx.png" /></a>
       </div>
-      <div class="grid-item flex-grow" id="marquee">There are only 7 DAYS and 2 HOURS left to own this work and support Onda!</div>
-      <div class="grid-item">
-        <a href="https://kickstarter.com/">KICKSTARTER</a>
+<?php
+$options = get_site_option('_igv_custom_options');
+
+if (!empty($options['marquee_text'])) {
+?>
+      <div class="grid-item item-m-6 item-l-8" id="marquee-holder">
+        <div id="marquee"><?php echo $options['marquee_text']; ?></div>
+      </div>
+<?php
+}
+?>
+      <div class="grid-item item-s-8 item-m-3 item-l-2 text-align-right">
+        <a href="https://kickstarter.com/"><img id="kickstarter-logo" src="<?php bloginfo('stylesheet_directory'); ?>/dist/img/logo_kickstarter.png" /></a>
       </div>
     </div>
   </header>
