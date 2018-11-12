@@ -17,6 +17,7 @@ if (have_posts()) {
     $price_mxn = get_post_meta($post->ID, '_igv_work_price_mxn', true);
     $price_usd = get_post_meta($post->ID, '_igv_work_price_usd', true);
     $year = get_post_meta($post->ID, '_igv_work_year', true);
+    $bio = get_post_meta($post->ID, '_igv_work_bio', true);
 
     $options = get_site_option('_igv_custom_options');
 ?>
@@ -28,6 +29,11 @@ if (have_posts()) {
 
         <div id="single-details" class="grid-item item-s-12 item-m-6 item-l-5 font-size-mid">
           <h1 class="font-size-large margin-bottom-micro"><?php echo !empty($artist) ? $artist : ''; ?></h1>
+          <?php if (!empty($bio)) { ?>
+          <div class="margin-bottom-tiny">
+            <span><?php echo $bio; ?></span>
+          </div>
+          <?php } ?>
           <div class="margin-bottom-micro">
             <span><?php echo !empty($price_mxn) ? '$' . $price_mxn . ' MXN' : ''; ?></span> /
             <span><?php echo !empty($price_usd) ? '$' . $price_usd . ' USD' : ''; ?></span>
