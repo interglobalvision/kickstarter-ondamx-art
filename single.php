@@ -25,8 +25,8 @@ if (have_posts()) {
         </div>
 
         <div id="single-details" class="grid-item item-s-12 item-m-6 item-l-5 font-size-mid">
-          <h1 class="font-size-large"><?php echo !empty($artist) ? $artist : ''; ?></h1>
-          <div>
+          <h1 class="font-size-large margin-bottom-micro"><?php echo !empty($artist) ? $artist : ''; ?></h1>
+          <div class="margin-bottom-micro">
             <span><?php echo !empty($price_mxn) ? '$' . $price_mxn . ' MXN' : ''; ?></span> /
             <span><?php echo !empty($price_usd) ? '$' . $price_usd . ' USD' : ''; ?></span>
           </div>
