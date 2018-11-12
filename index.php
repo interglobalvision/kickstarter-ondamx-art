@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main id="main-content" class="padding-bottom-large margin-top-basic">
+<main id="main-content" class="margin-top-basic">
   <div class="container">
 <?php
 if (have_posts()) {
@@ -44,6 +44,8 @@ if (have_posts()) {
     </section>
 <?php
 }
+
+get_template_part('partials/intro');
 ?>
 
   </div>
