@@ -9,14 +9,31 @@
   $margin-mid = ($gutter * 3.5)
   $margin-large = ($gutter * 5)
 
-  $font-size-basic = 14px
+  $font-size-basic = 16px
+  $font-size-extra = 36px
+  $font-size-large = 28px
+  $font-size-mid = 21px
+  $font-size-small = 12px
+  $font-size-tiny = 10px
 
   space-maker($margin-micro, $margin-tiny, $margin-small, $margin-basic, $margin-mid, $margin-large)
 
-  grid-maker(680px, $gutter, m)
+  grid-maker(96%, $gutter, m)
 
-  font-sizes($font-size-basic)
+  font-sizes($font-size-basic, $font-size-extra, $font-size-large, $font-size-mid, $font-size-small, $font-size-tiny)
 
   .mobile-only
     display: none !important
 
+  .masonry-item
+    width: 50%
+    padding: 0 $margin-tiny $margin-small
+
+  #marquee-holder
+    display: block
+
+  #single-details
+    padding-top: $margin-large
+
+  #support
+    padding: $margin-small $margin-basic

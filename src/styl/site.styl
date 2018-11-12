@@ -21,7 +21,7 @@ normalize()
 // FONTS
 @import 'fonts/fonts'
 
-$font-sans = font-stack('Helvetica')
+$font-sans = 'ABCNormal-Book', 'Helvetica Neue', font-stack('Helvetica')
 $font-serif = font-stack('Georgia')
 
 // ******************************************************
@@ -62,12 +62,17 @@ body
 .line-larger
   line-height: $font-leading-larger
 
+strong, .font-barlow
+  font-family: 'Barlow Condensed', 'ABCNormal-Book', 'Helvetica Neue', font-stack('Helvetica')
+  font-weight: 500
+
 // ******************************************************
 
 // VARIABLES
 
-$color-black = rgb(0, 0, 0)
+$color-black = rgb(28, 28, 26)
 $color-white = rgb(255, 255, 255)
+$color-blue = rgb(12, 26, 135)
 
 // ******************************************************
 

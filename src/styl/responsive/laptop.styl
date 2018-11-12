@@ -1,3 +1,11 @@
 @media screen and (min-width: 1280px)
 
-  grid-maker(1200px)
+  $gutter = 24px
+
+  grid-maker(96%, $gutter, l)
+
+  .container
+    max-width: 1280px
+
+  #kickstarter-logo
+    max-height: 25px
