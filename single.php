@@ -40,9 +40,11 @@ if (have_posts()) {
             <span><?php echo !empty($price_mxn) ? '$' . $price_mxn . ' MXN' : ''; ?></span> /
             <span><?php echo !empty($price_usd) ? '$' . $price_usd . ' USD' : ''; ?></span>
           </div>
+          <? if (!empty($title)) { ?>
           <div>
-            <h2 class="u-inline-block font-italic"><?php echo !empty($title) ? $title : ''; ?></h2><?php echo !empty($year) ? ', <span>' . $year . '</span>' : ''; ?>
+            <h2 class="u-inline-block font-italic"><?php echo $title; ?></h2><?php echo !empty($year) ? ', <span>' . $year . '</span>' : ''; ?>
           </div>
+          <? } ?>
           <div>
             <?php the_content(); ?>
           </div>
