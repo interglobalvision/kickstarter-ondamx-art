@@ -31,7 +31,7 @@ if (have_posts()) {
               <span><?php echo !empty($price_mxn) ? '$' . $price_mxn . ' MXN' : ''; ?></span> /
               <span><?php echo !empty($price_usd) ? '$' . $price_usd . ' USD' : ''; ?></span>
             </div>
-            <h3 class="u-inline-block font-italic"><?php echo !empty($title) ? $title : ''; ?></h3>, <span><?php echo !empty($year) ? $year : ''; ?></span>
+            <h3 class="u-inline-block font-italic"><?php echo !empty($title) ? $title : ''; ?></h3><?php echo !empty($year) ? ', <span>' . $year . '</span>' : ''; ?>
 
           </a>
 
