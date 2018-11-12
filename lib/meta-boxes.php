@@ -39,5 +39,40 @@ function igv_cmb_metaboxes() {
    * Reference: https://github.com/WebDevStudios/CMB2/blob/master/example-functions.php
    */
 
+  $metabox = new_cmb2_box( array(
+    'id'            => $prefix . 'metabox',
+    'title'         => esc_html__( 'Details', 'cmb2' ),
+    'object_types'  => array( 'post' ), // Post type
+  ) );
+
+  $metabox->add_field( array(
+		'name'       => esc_html__( 'Artist', 'cmb2' ),
+		'id'         => $prefix . 'work_artist',
+		'type'       => 'text',
+	) );
+
+  $metabox->add_field( array(
+		'name'       => esc_html__( 'Title', 'cmb2' ),
+		'id'         => $prefix . 'work_title',
+		'type'       => 'text',
+	) );
+
+  $metabox->add_field( array(
+		'name'       => esc_html__( 'Year', 'cmb2' ),
+		'id'         => $prefix . 'work_year',
+		'type'       => 'text',
+	) );
+
+  $metabox->add_field( array(
+		'name'       => esc_html__( 'Price MXN', 'cmb2' ),
+		'id'         => $prefix . 'work_price_mxn',
+		'type'       => 'text',
+	) );
+
+  $metabox->add_field( array(
+		'name'       => esc_html__( 'Price USD', 'cmb2' ),
+		'id'         => $prefix . 'work_price_usd',
+		'type'       => 'text',
+	) );
 }
 ?>
