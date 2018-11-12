@@ -36,7 +36,7 @@ if (have_posts()) {
               <span><?php echo !empty($price_usd) ? '$' . $price_usd . ' USD' : ''; ?></span>
             </div>
             <? if (!empty($title)) { ?>
-              <h3 class="u-inline-block font-italic"><?php echo $title; ?></h3><?php echo !empty($year) ? ', <span>' . $year . '</span>' : ''; ?>
+              <h3 class="work-title font-italic"><?php echo $title; ?></h3><?php echo !empty($year) ? ', <span>' . $year . '</span>' : ''; ?>
             <? } ?>
           </a>
 

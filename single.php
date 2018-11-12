@@ -42,7 +42,7 @@ if (have_posts()) {
           </div>
           <? if (!empty($title)) { ?>
           <div>
-            <h2 class="u-inline-block font-italic"><?php echo $title; ?></h2><?php echo !empty($year) ? ', <span>' . $year . '</span>' : ''; ?>
+            <h2 class="work-title font-italic"><?php echo $title; ?></h2><?php echo !empty($year) ? ', <span>' . $year . '</span>' : ''; ?>
           </div>
           <? } ?>
           <div>
