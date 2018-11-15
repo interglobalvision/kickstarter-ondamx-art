@@ -94,3 +94,27 @@ $transition-duration = .3s
 
 .work-title
   display: inline
+
+.sold-dot
+  position: absolute
+  top: 0
+  right: 0
+  width: 15px
+  height: 15px
+  border-radius: 15px
+  background-color: #ff4319
+  transition: width .2s, height .2s
+  overflow: hidden
+  &:hover
+    width: 180px
+    height: 50px
+
+.sold-text
+  color: $color-white
+  padding: $margin-tiny
+  width: 180px
+  height: 50px
+  position: absolute
+  top: 0
+  right: 0
+  font-size: $font-size-basic
