@@ -46,6 +46,12 @@ function igv_cmb_metaboxes() {
   ) );
 
   $metabox->add_field( array(
+		'name'       => esc_html__( 'Sold', 'cmb2' ),
+		'id'         => $prefix . 'work_sold',
+		'type'       => 'checkbox',
+	) );
+
+  $metabox->add_field( array(
 		'name'       => esc_html__( 'Artist', 'cmb2' ),
 		'id'         => $prefix . 'work_artist',
 		'type'       => 'text',
